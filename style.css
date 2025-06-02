@@ -1,0 +1,67 @@
+/*achtergrond*/
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('images/bossprogram.png'); 
+  background-size: cover;
+  height: 100vh;
+}
+
+/*eerste afbeelding van het ei, fase 0*/
+.eifase0 {
+  width: 18em;
+  margin-left: 40em;
+  margin-top: 15em;
+}
+
+/*balk onderaan pagina met knoppen voor eten*/
+.eten-balk {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ea9c9c;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/*knoppen eten in de balk*/
+.eten-knop {
+  width: 50px;       
+  cursor: pointer;
+  margin: 0 10px;
+  transition: transform 0.6s ease;
+}
+
+.eten-knop:hover {
+  transform: scale(1.4);
+}
+
+
+/* met behulp van chatgpt. Prompt: zorg voor een confetti knop */
+#confetti-knop {
+  padding: 8px 15px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #70ffc8;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+}
+
+#confetti-knop:hover {
+  background-color: #ffff74;
+}
+
+
+/*met behulp van chatgpt. Prompt: zorg dat de draakjes zweven. */
+@keyframes zweven {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+.zwevend {
+  animation: zweven 3s ease-in-out infinite;
+}
