@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Draak Tamagotchi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main>
+   
+    <section class="tamagotchi-gebied">
+      <img id="tamagotchi" src="images/drakenei.png" alt="Tamagotchi" class="eifase0">
+    </section>
+
+  
+    <section class="eten-balk">
+      <img id="knop-peper" src="images/etenpeper.png" alt="Peper" class="eten-knop">
+      <img id="knop-peer" src="images/etenpeer.png" alt="Peer" class="eten-knop">
+      <img id="knop-aardappel" src="images/etenaardappel.png" alt="Aardappel" class="eten-knop">
+      <img id="knop-vis" src="images/etenvis.png" alt="Vis" class="eten-knop">
+      <button id="confetti-knop">🎉</button>
+    </section>
+
+
+    <audio id="achtergrondmuziek" autoplay loop>
+      <source src="snd/efteling.mp3" type="audio/mpeg">
+    </audio>
+  </main>
+
+
+  <script src="java/java.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>
